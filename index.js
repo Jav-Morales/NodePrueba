@@ -63,8 +63,9 @@ app.put('/api/product',(req, res) => {
 });
 
 
-app.delete('/api/product',(req, res) => {
-
+app.delete('/api/product/:productId',(req, res) => {
+  let productId = req.params.productId
+  Product
 });
 
 mongoose.connect('mongodb://localhost:27017/shop', (err,res) => {
